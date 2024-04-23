@@ -1,0 +1,4 @@
+Create STG schema
+Create STG Scores
+Create dbo Scores
+Create TRF Schema
