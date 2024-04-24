@@ -1,0 +1,28 @@
+insert into dbo.scores
+select 
+      sysdatetime()
+      ,[External ID]
+      ,[Season]
+      ,[Duration]
+      ,[Away Team]
+      ,[Home Team]
+      ,[Away Team Wins]
+      ,[Away Team Losses]
+      ,[Away Q1 Points]
+      ,[Away Q2 Points]
+      ,[Away Q3 Points]
+      ,[Away Q4 Points]
+      ,[Away Score]
+      ,[Home Team Wins]
+      ,[Home Team Losses]
+      ,[Home Q1 Points]
+      ,[Home Q2 Points]
+      ,[Home Q3 Points]
+      ,[Home Q4 Points]
+      ,[Home Score]
+      ,[Officials]
+      ,[Times Tied]
+      ,[Lead Changes]
+      ,[Game Date]
+  from 
+      [NBA].[TBL_Scores]
