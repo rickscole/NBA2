@@ -2,3 +2,4 @@ Create STG schema
 Create STG Scores
 Create table Scores
 Create TRF Schema
+Create procedure TRF transfer scores
