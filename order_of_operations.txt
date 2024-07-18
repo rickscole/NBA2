@@ -6,3 +6,4 @@ Create TRF Schema
 Create procedure TRF transfer scores
 
 Create STG Player Game Stats
+Create Player Game Stats
