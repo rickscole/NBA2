@@ -1,5 +1,6 @@
 Create STG schema
 Create TRF Schema
+Create clean schema
 
 Create STG Scores
 Create table Scores
@@ -8,3 +9,4 @@ Create procedure TRF transfer scores
 Create STG Player Game Stats
 Create Player Game Stats
 Create procedure TRF transfer play game stats
+
