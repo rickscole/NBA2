@@ -11,6 +11,6 @@ Create STG Player Game Stats
 Create Player Game Stats
 Create procedure TRF transfer play game stats
 
-Create Clean Player Game Stats
+Create procedure Clean Player Game Stats
 
 Create View BI Player Game Stats
