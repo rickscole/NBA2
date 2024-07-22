@@ -15,7 +15,7 @@ select
     , [game_id] = try_convert(int,[game_id])
     , [points] = try_convert(smallint,[points])
     , [position]
-    , [minutes]
+    , [minutes] = try_convert(smallint,[minutes])
     , [field_goals_made] = try_convert(tinyint,[field_goals_made])
     , [field_goals_attempted] = try_convert(tinyint,[field_goals_attempted])
     , [free_throws_made] = try_convert(tinyint,[free_throws_made])
