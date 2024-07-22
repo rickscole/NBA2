@@ -12,5 +12,7 @@ Create Player Game Stats
 Create procedure TRF transfer play game stats
 
 Create procedure Clean Player Game Stats
+Create procedure Player Full Season Rank
 
 Create View BI Player Game Stats
+Create View BI Player Full Season Rank
