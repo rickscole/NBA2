@@ -13,7 +13,7 @@ CREATE TABLE [dbo].[player_game_stats](
 	[game_id] [int] NULL,
 	[points] [smallint] NULL,
 	[position] [nvarchar](100) NULL,
-	[minutes] [int] NULL,
+	[minutes] [smallint] NULL,
 	[field_goals_made] [tinyint] NULL,
 	[field_goals_attempted] [tinyint] NULL,
 	[free_throws_made] [tinyint] NULL,
