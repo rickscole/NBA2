@@ -1,6 +1,7 @@
 Create STG schema
 Create TRF Schema
 Create clean schema
+Create BI schema
 
 Create STG Scores
 Create table Scores
