@@ -16,3 +16,4 @@ Create procedure Player Full Season Rank
 
 Create View BI Player Game Stats
 Create View BI Player Full Season Rank
+Create View BI Season
