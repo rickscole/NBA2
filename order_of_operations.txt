@@ -19,3 +19,4 @@ Create View BI Player Full Season Rank
 Create View BI Season
 Create View BI Player Season
 Create View BI Player Season Primary and Concat Team
+Create View BI Player
