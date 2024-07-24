@@ -3,7 +3,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-create procedure [dbo].[clean_player_game_stats] as
+CREATE procedure [dbo].[clean_player_game_stats] as
 
 -- drop table if exists
 if object_id('clean.player_game_stats', 'U') is not null
@@ -13,11 +13,11 @@ drop table clean.player_game_stats;
 -- transfer to dbo to clean
 select
     [player_id]
+    ,[game_id]
     ,[first_name]
     ,[last_name]
     ,[team_id]
     ,[team_name]
-    ,[game_id]
     ,[points]
     ,[position]
     ,[minutes]
@@ -42,6 +42,9 @@ select
     , player_name = concat([first_name], ' ', [last_name])
 into clean.player_game_stats
 from [dbo].[player_game_stats]
+where 1 = 1
+    and [player_id] is not null
+    and [game_id] is not null
 
 
 -- delete duplicates
@@ -60,5 +63,10 @@ with cte as
 )
 delete cte where [rn] > 1
 
+
+-- add composite key to table
+alter table clean.player_game_stats alter column player_id integer not null
+alter table clean.player_game_stats alter column game_id integer not null
+alter table clean.player_game_stats add primary key(player_id, game_id);
 
 GO
