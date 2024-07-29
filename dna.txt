@@ -1,0 +1,66 @@
+
+-- create schemas
+create_stg_schema.sql -- create stg schema
+create_trf_schema.sql -- create trf schema
+create_cln_schema.sql -- create cln schema
+create_bi_schema.sql -- create bi schema 
+
+
+-- create standalone views
+create_view_position_group.sql -- create bi view of position groups
+create_view_season_type.sql -- create bi view of season types
+
+
+-- create stage tables
+create_table_stg_scores.sql -- create stg scores table
+create_table_stg_player_game_stats.sql -- create stg player game stats table 
+
+
+-- create base tables
+create_table_scores.sql -- create scores table
+create_table_player_game_stats.sql -- create player game stats table 
+
+
+-- create transfer stored procedures
+create_sp_transfer_scores.sql -- create transfer sp for scores 
+create_sp_transfer_player_game_stats.sql -- create transfer sp for player game stats
+
+
+-- create cleaning stored procedures
+create_sp_clean_scores.sql -- create clean sp for scores
+create_sp_clean_player_game_stats.sql -- create clean sp for player game stats
+
+
+-- create 1st order views
+create_view_player.sql  -- create bi view of players
+create_view_season.sql -- create bi view of seasons
+create_view_player_season.sql -- create bi view of player seasons
+create_view_game_season.sql -- create bi view of games seasons
+create_view_scores.sql -- create bi view of scores
+create_view_player_game_stats.sql -- create bi view of player game stats
+
+
+-- create 1st order stored procedures
+create_sp_create_player_season_primary_and_concat_position.sql -- create sp to create player season position table
+create_sp_create_player_season_primary_and_concat_team.sql -- create sp to create player season team table
+create_sp_create_player_full_season_rank.sql -- create sp to create player season ranks table
+create_sp_create_player_regular_season_rank.sql -- create sp to create player regular season ranks table
+
+
+-- create 2nd order views
+create_view_player_season_primary_and_concat_position.sql -- create bi view of player season position
+create_view_player_season_primary_and_concat_team.sql -- create bi view of player season teams
+create_view_player_full_season_rank.sql -- create bi view of player season ranks
+create_view_player_regular_season_rank.sql -- create bi view of player regular season ranks
+
+
+-- create 2nd order stored procedures
+create_sp_create_regular_season_min_max_player_stats.sql -- create sp to create min and max of league player stats
+
+
+-- create 3rd order stored procedures
+create_sp_create_player_regular_season_percentile.sql -- create sp to create player regular season percentile
+
+
+-- create 3rd order views 
+create_view_player_regular_season_percentile.sql -- create bi view of player regular season percentile
