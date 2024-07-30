@@ -56,6 +56,7 @@ create_view_player_regular_season_rank.sql -- create bi view of player regular s
 
 -- create 2nd order stored procedures
 create_sp_create_regular_season_min_max_player_stats.sql -- create sp to create min and max of league player stats
+create_sp_create_player_position_group_regular_season_rank.sql -- create sp to create rankings for players by position group for each season
 
 
 -- create 3rd order stored procedures
@@ -64,3 +65,4 @@ create_sp_create_player_regular_season_percentile.sql -- create sp to create pla
 
 -- create 3rd order views 
 create_view_player_regular_season_percentile.sql -- create bi view of player regular season percentile
+create_view_player_position_group_regular_season_rank.sql -- create bi view of player position group regular season rank
