@@ -31,15 +31,6 @@ create_sp_clean_scores.sql -- create clean sp for scores
 create_sp_clean_player_game_stats.sql -- create clean sp for player game stats
 
 
--- create 1st order views
-create_view_player.sql  -- create bi view of players
-create_view_season.sql -- create bi view of seasons
-create_view_player_season.sql -- create bi view of player seasons
-create_view_game_season.sql -- create bi view of games seasons
-create_view_scores.sql -- create bi view of scores
-create_view_player_game_stats.sql -- create bi view of player game stats
-
-
 -- create 1st order stored procedures
 create_sp_create_player_season_primary_and_concat_position.sql -- create sp to create player season position table
 create_sp_create_player_season_primary_and_concat_team.sql -- create sp to create player season team table
@@ -47,24 +38,33 @@ create_sp_create_player_full_season_rank.sql -- create sp to create player seaso
 create_sp_create_player_regular_season_rank.sql -- create sp to create player regular season ranks table
 
 
--- create 2nd order views
-create_view_player_season_primary_and_concat_position.sql -- create bi view of player season position
-create_view_player_season_primary_and_concat_team.sql -- create bi view of player season teams
-create_view_player_full_season_rank.sql -- create bi view of player season ranks
-create_view_player_regular_season_rank.sql -- create bi view of player regular season ranks
-
-
 -- create 2nd order stored procedures
-create_sp_create_regular_season_min_max_player_stats.sql -- create sp to create min and max of league player stats
+create_sp_create_regular_season_min_max_player_stats.sql -- create sp to create min and max of season player stats
 create_sp_create_player_position_group_regular_season_rank.sql -- create sp to create rankings for players by position group for each season
 
 
 -- create 3rd order stored procedures
 create_sp_create_player_regular_season_percentile.sql -- create sp to create player regular season percentile
 create_sp_create_player_regular_season_rank_by_position_group.sql -- create sp to create rankings by position for various metrics in a season
+create_sp_create_regular_season_min_max_player_position_group_stats.sql -- create sp to create min and max of season payer stats by position group
 
 
--- create 3rd order views 
+-- create 4th order stored procedures
+create_sp_create_player_position_group_regular_season_percentile.sql -- create sp to create player regular season percentile by position group
+
+
+-- create views
+create_view_player.sql  -- create bi view of players
+create_view_season.sql -- create bi view of seasons
+create_view_player_season.sql -- create bi view of player seasons
+create_view_game_season.sql -- create bi view of games seasons
+create_view_scores.sql -- create bi view of scores
+create_view_player_game_stats.sql -- create bi view of player game stats
+create_view_player_season_primary_and_concat_position.sql -- create bi view of player season position
+create_view_player_season_primary_and_concat_team.sql -- create bi view of player season teams
+create_view_player_full_season_rank.sql -- create bi view of player season ranks
+create_view_player_regular_season_rank.sql -- create bi view of player regular season ranks
 create_view_player_regular_season_percentile.sql -- create bi view of player regular season percentile
 create_view_player_position_group_regular_season_rank.sql -- create bi view of player position group regular season rank
 create_view_player_regular_season_rank_by_position_group.sql -- create bi view of player position group
+create_view_player_position_group_regular_season_percentile.sql -- create bi view of player position group regular season percentile
