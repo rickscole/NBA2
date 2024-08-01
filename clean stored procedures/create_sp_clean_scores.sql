@@ -4,7 +4,6 @@ SET QUOTED_IDENTIFIER ON
 GO
 CREATE procedure [cln].[clean_scores] as
 
-
 -- drop table if exists
 if object_id('clean.scores', 'U') is not null
 drop table clean.scores; 
@@ -57,6 +56,11 @@ select
     ,total_half2_points = cast(home_q3_points as smallint) + cast(away_q3_points as smallint) + cast(home_q4_points as smallint) + cast(away_q4_points as smallint)
     ,[total_overtime_points] = cast([home_score] as smallint) + cast([away_score] as smallint) - (cast([away_q1_points] as smallint) + cast([away_q2_points] as smallint) + cast([away_q3_points] as smallint) + cast([away_q4_points] as smallint)+ cast([home_q1_points] as smallint) + cast([home_q2_points] as smallint) + cast([home_q3_points] as smallint) + cast([home_q4_points] as smallint))
     ,st.type as game_type
+    ,was_there_overtime = case 
+        when coalesce(cast([home_score] as smallint) + cast([away_score] as smallint) - (cast([away_q1_points] as smallint) + cast([away_q2_points] as smallint) + cast([away_q3_points] as smallint) + cast([away_q4_points] as smallint)+ cast([home_q1_points] as smallint) + cast([home_q2_points] as smallint) + cast([home_q3_points] as smallint) + cast([home_q4_points] as smallint)), 0) = 0
+        then 0 
+        else 1
+        end  
 into clean.scores
 from 
     [dbo].[scores] a
