@@ -36,6 +36,7 @@ create_sp_create_player_season_primary_and_concat_position.sql -- create sp to c
 create_sp_create_player_season_primary_and_concat_team.sql -- create sp to create player season team table
 create_sp_create_player_full_season_rank.sql -- create sp to create player season ranks table
 create_sp_create_player_regular_season_rank.sql -- create sp to create player regular season ranks table
+create_sp_create_team.sql -- create sp to create team table
 
 
 -- create 2nd order stored procedures
