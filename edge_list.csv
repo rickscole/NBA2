@@ -1,0 +1,96 @@
+head_node_type,head_node_schema,head_node_name,tail_node_type,tail_node_schema,tail_node_schema,head_node_verbose,tail_node_verbose,head_node_id,tail_node_id
+table,clean,scores,view,bi,game_season,table clean.scores,view bi.game_season,27,48
+table,clean,player_game_stats,view,bi,player,table clean.player_game_stats,view bi.player,26,49
+table,dbo,player_full_season_rank,view,bi,player_full_season_rank,table dbo.player_full_season_rank,view bi.player_full_season_rank,28,50
+table,clean,player_game_stats,view,bi,player_game_stats,table clean.player_game_stats,view bi.player_game_stats,26,51
+table,dbo,player_position_group_regular_season_percentile,view,bi,player_position_group_regular_season_percentile,table dbo.player_position_group_regular_season_percentile,view bi.player_position_group_regular_season_percentile,30,53
+table,dbo,player_position_group_regular_season_rank,view,bi,player_position_group_regular_season_rank,table dbo.player_position_group_regular_season_rank,view bi.player_position_group_regular_season_rank,31,54
+table,dbo,player_regular_season_pat_stats,view,bi,player_regular_season_pat_stats,table dbo.player_regular_season_pat_stats,view bi.player_regular_season_pat_stats,32,55
+table,dbo,player_regular_season_percentile,view,bi,player_regular_season_percentile,table dbo.player_regular_season_percentile,view bi.player_regular_season_percentile,33,56
+table,dbo,player_regular_season_rank,view,bi,player_regular_season_rank,table dbo.player_regular_season_rank,view bi.player_regular_season_rank,34,57
+table,dbo,player_regular_season_rank_by_position_group,view,bi,player_regular_season_rank_by_position_group,table dbo.player_regular_season_rank_by_position_group,view bi.player_regular_season_rank_by_position_group,35,58
+table,clean,player_game_stats,view,bi,player_season,table clean.player_game_stats,view bi.player_season,26,59
+table,dbo,player_season_primary_and_concat_position,view,bi,player_season_primary_and_concat_position,table dbo.player_season_primary_and_concat_position,view bi.player_season_primary_and_concat_position,36,60
+table,dbo,player_season_primary_and_concat_team,view,bi,player_season_primary_and_concat_team,table dbo.player_season_primary_and_concat_team,view bi.player_season_primary_and_concat_team,37,61
+table,dbo,regular_season_pat_rankings_superstars_and_stars,view,bi,regular_season_pat_rankings_superstars_and_stars,table dbo.regular_season_pat_rankings_superstars_and_stars,view bi.regular_season_pat_rankings_superstars_and_stars,41,62
+table,clean,scores,view,bi,scores,table clean.scores,view bi.scores,27,63
+table,clean,player_game_stats,view,bi,season,table clean.player_game_stats,view bi.season,26,64
+table,dbo,team,view,bi,team,table dbo.team,view bi.team,43,65
+table,dbo,player_game_stats,stored procedure,cln,clean_player_game_stats,table dbo.player_game_stats,stored procedure cln.clean_player_game_stats,29,4
+table,dbo,team_score,stored procedure,cln,clean_player_game_stats,table dbo.team_score,stored procedure cln.clean_player_game_stats,45,4
+stored procedure,cln,clean_player_game_stats,table,clean,player_game_stats,stored procedure cln.clean_player_game_stats,table clean.player_game_stats,4,26
+table,dbo,scores,stored procedure,cln,clean_scores,table dbo.scores,stored procedure cln.clean_scores,42,5
+view,dbo,season_type,stored procedure,cln,clean_scores,view dbo.season_type,stored procedure cln.clean_scores,67,5
+stored procedure,cln,clean_scores,table,clean,scores,stored procedure cln.clean_scores,table clean.scores,5,27
+table,clean,player_game_stats,stored procedure,dbo,create_player_full_season_rank,table clean.player_game_stats,stored procedure dbo.create_player_full_season_rank,26,6
+stored procedure,dbo,create_player_full_season_rank,table,dbo,player_full_season_rank,stored procedure dbo.create_player_full_season_rank,table dbo.player_full_season_rank,6,28
+table,dbo,player_position_group_regular_season_rank,stored procedure,dbo,create_player_position_group_regular_season_percentile,table dbo.player_position_group_regular_season_rank,stored procedure dbo.create_player_position_group_regular_season_percentile,31,7
+table,dbo,regular_season_min_max_player_position_group_stats,stored procedure,dbo,create_player_position_group_regular_season_percentile,table dbo.regular_season_min_max_player_position_group_stats,stored procedure dbo.create_player_position_group_regular_season_percentile,38,7
+stored procedure,dbo,create_player_position_group_regular_season_percentile,table,dbo,player_position_group_regular_season_percentile,stored procedure dbo.create_player_position_group_regular_season_percentile,table dbo.player_position_group_regular_season_percentile,7,30
+table,clean,player_game_stats,stored procedure,dbo,create_player_position_group_regular_season_rank,table clean.player_game_stats,stored procedure dbo.create_player_position_group_regular_season_rank,26,8
+table,clean,scores,stored procedure,dbo,create_player_position_group_regular_season_rank,table clean.scores,stored procedure dbo.create_player_position_group_regular_season_rank,27,8
+table,dbo,player_season_primary_and_concat_position,stored procedure,dbo,create_player_position_group_regular_season_rank,table dbo.player_season_primary_and_concat_position,stored procedure dbo.create_player_position_group_regular_season_rank,36,8
+stored procedure,dbo,create_player_position_group_regular_season_rank,table,dbo,player_position_group_regular_season_rank,stored procedure dbo.create_player_position_group_regular_season_rank,table dbo.player_position_group_regular_season_rank,8,31
+table,clean,player_game_stats,stored procedure,dbo,create_player_regular_season_pat_stats,table clean.player_game_stats,stored procedure dbo.create_player_regular_season_pat_stats,26,9
+table,dbo,team_score,stored procedure,dbo,create_player_regular_season_pat_stats,table dbo.team_score,stored procedure dbo.create_player_regular_season_pat_stats,45,9
+table,dbo,regular_season_minutes_buckets,stored procedure,dbo,create_player_regular_season_pat_stats,table dbo.regular_season_minutes_buckets,stored procedure dbo.create_player_regular_season_pat_stats,40,9
+stored procedure,dbo,create_player_regular_season_pat_stats,table,dbo,player_regular_season_pat_stats,stored procedure dbo.create_player_regular_season_pat_stats,table dbo.player_regular_season_pat_stats,9,32
+stored procedure,dbo,player_regular_season_rank,stored procedure,dbo,create_player_regular_season_percentile,stored procedure dbo.player_regular_season_rank,stored procedure dbo.create_player_regular_season_percentile,22,10
+stored procedure,dbo,regular_season_min_max_player_stats,stored procedure,dbo,create_player_regular_season_percentile,stored procedure dbo.regular_season_min_max_player_stats,stored procedure dbo.create_player_regular_season_percentile,23,10
+stored procedure,dbo,create_player_regular_season_percentile,table,dbo,player_regular_season_percentile,stored procedure dbo.create_player_regular_season_percentile,table dbo.player_regular_season_percentile,10,33
+table,clean,player_game_stats,stored procedure,dbo,create_player_regular_season_rank,table clean.player_game_stats,stored procedure dbo.create_player_regular_season_rank,26,11
+table,clean,scores,stored procedure,dbo,create_player_regular_season_rank,table clean.scores,stored procedure dbo.create_player_regular_season_rank,27,11
+stored procedure,dbo,create_player_regular_season_rank,table,dbo,player_regular_season_rank,stored procedure dbo.create_player_regular_season_rank,table dbo.player_regular_season_rank,11,34
+table,dbo,player_position_group_regular_season_rank,stored procedure,dbo,create_player_regular_season_rank_by_position_group,table dbo.player_position_group_regular_season_rank,stored procedure dbo.create_player_regular_season_rank_by_position_group,31,12
+stored procedure,dbo,create_player_regular_season_rank_by_position_group,table,dbo,player_regular_season_rank_by_position_group,stored procedure dbo.create_player_regular_season_rank_by_position_group,table dbo.player_regular_season_rank_by_position_group,12,35
+table,clean,player_game_stats,stored procedure,dbo,create_player_season_primary_and_concat_position,table clean.player_game_stats,stored procedure dbo.create_player_season_primary_and_concat_position,26,13
+view,dbo,position_group,stored procedure,dbo,create_player_season_primary_and_concat_position,view dbo.position_group,stored procedure dbo.create_player_season_primary_and_concat_position,66,13
+stored procedure,dbo,create_player_season_primary_and_concat_position,table,dbo,player_season_primary_and_concat_position,stored procedure dbo.create_player_season_primary_and_concat_position,table dbo.player_season_primary_and_concat_position,13,36
+table,clean,player_game_stats,stored procedure,dbo,create_player_season_primary_and_concat_team,table clean.player_game_stats,stored procedure dbo.create_player_season_primary_and_concat_team,26,14
+table,dbo,team,stored procedure,dbo,create_player_season_primary_and_concat_team,table dbo.team,stored procedure dbo.create_player_season_primary_and_concat_team,43,14
+stored procedure,dbo,create_player_season_primary_and_concat_team,table,dbo,player_season_primary_and_concat_team,stored procedure dbo.create_player_season_primary_and_concat_team,table dbo.player_season_primary_and_concat_team,14,37
+table,dbo,player_position_group_regular_season_rank,stored procedure,dbo,create_regular_season_min_max_player_position_group_stats,table dbo.player_position_group_regular_season_rank,stored procedure dbo.create_regular_season_min_max_player_position_group_stats,31,15
+stored procedure,dbo,create_regular_season_min_max_player_position_group_stats,table,dbo,regular_season_min_max_player_position_group_stats,stored procedure dbo.create_regular_season_min_max_player_position_group_stats,table dbo.regular_season_min_max_player_position_group_stats,15,38
+table,dbo,player_regular_season_rank,stored procedure,dbo,create_regular_season_min_max_player_stats,table dbo.player_regular_season_rank,stored procedure dbo.create_regular_season_min_max_player_stats,34,16
+stored procedure,dbo,create_regular_season_min_max_player_stats,table,dbo,regular_season_min_max_player_stats,stored procedure dbo.create_regular_season_min_max_player_stats,table dbo.regular_season_min_max_player_stats,16,39
+table,dbo,player_regular_season_rank,stored procedure,dbo,create_regular_season_minutes_buckets,table dbo.player_regular_season_rank,stored procedure dbo.create_regular_season_minutes_buckets,34,17
+stored procedure,dbo,create_regular_season_minutes_buckets,table,dbo,regular_season_minutes_buckets,stored procedure dbo.create_regular_season_minutes_buckets,table dbo.regular_season_minutes_buckets,17,40
+table,dbo,player_regular_season_pat_stats,stored procedure,dbo,create_regular_season_pat_rankings_superstars_and_stars,table dbo.player_regular_season_pat_stats,stored procedure dbo.create_regular_season_pat_rankings_superstars_and_stars,32,18
+table,dbo,regular_season_minutes_buckets,stored procedure,dbo,create_regular_season_pat_rankings_superstars_and_stars,table dbo.regular_season_minutes_buckets,stored procedure dbo.create_regular_season_pat_rankings_superstars_and_stars,40,18
+stored procedure,dbo,create_regular_season_pat_rankings_superstars_and_stars,table,dbo,regular_season_pat_rankings_superstars_and_stars,stored procedure dbo.create_regular_season_pat_rankings_superstars_and_stars,table dbo.regular_season_pat_rankings_superstars_and_stars,18,41
+table,clean,player_game_stats,stored procedure,dbo,create_team,table clean.player_game_stats,stored procedure dbo.create_team,26,19
+stored procedure,dbo,create_team,table,dbo,team,stored procedure dbo.create_team,table dbo.team,19,43
+table,dbo,team_score,stored procedure,dbo,create_team_regular_season,table dbo.team_score,stored procedure dbo.create_team_regular_season,45,20
+table,dbo,team,stored procedure,dbo,create_team_regular_season,table dbo.team,stored procedure dbo.create_team_regular_season,43,20
+stored procedure,dbo,create_team_regular_season,table,dbo,team_regular_season,stored procedure dbo.create_team_regular_season,table dbo.team_regular_season,20,44
+table,clean,scores,stored procedure,dbo,create_team_score,table clean.scores,stored procedure dbo.create_team_score,27,21
+stored procedure,dbo,create_team_score,table,dbo,team_score,stored procedure dbo.create_team_score,table dbo.team_score,21,45
+table,stg,player_game_stats,stored procedure,trf,transfer_player_game_stats,table stg.player_game_stats,stored procedure trf.transfer_player_game_stats,46,24
+stored procedure,trf,transfer_player_game_stats,table,dbo,player_game_stats,stored procedure trf.transfer_player_game_stats,table dbo.player_game_stats,24,29
+table,stg,scores,stored procedure,trf,transfer_scores,table stg.scores,stored procedure trf.transfer_scores,47,25
+stored procedure,trf,transfer_scores,table,dbo,scores,stored procedure trf.transfer_scores,table dbo.scores,25,42
+table,clean,player_game_stats,view,bi,player_game_stats_pat,table clean.player_game_stats,view bi.player_game_stats_pat,26,52
+view,bi,season,dashboard,,Player PAT,view bi.season,dashboard Player PAT,64,1
+view,bi,player,dashboard,,Player PAT,view bi.player,dashboard Player PAT,49,1
+view,bi,player_regular_season_pat_stats,dashboard,,Player PAT,view bi.player_regular_season_pat_stats,dashboard Player PAT,55,1
+view,bi,player_game_stats_pat,dashboard,,Player PAT,view bi.player_game_stats_pat,dashboard Player PAT,52,1
+view,bi,player_season_primary_and_concat_team,dashboard,,Player PAT,view bi.player_season_primary_and_concat_team,dashboard Player PAT,61,1
+view,bi,team,dashboard,,Player PAT,view bi.team,dashboard Player PAT,65,1
+view,bi,regular_season_pat_rankings_superstars_and_stars,dashboard,,Player PAT,view bi.regular_season_pat_rankings_superstars_and_stars,dashboard Player PAT,62,1
+view,bi,player,dashboard,,Player Position Group Season Rankings,view bi.player,dashboard Player Position Group Season Rankings,49,2
+view,bi,player_position_group_regular_season_percentile,dashboard,,Player Position Group Season Rankings,view bi.player_position_group_regular_season_percentile,dashboard Player Position Group Season Rankings,53,2
+view,bi,player_position_group_regular_season_rank,dashboard,,Player Position Group Season Rankings,view bi.player_position_group_regular_season_rank,dashboard Player Position Group Season Rankings,54,2
+view,bi,player_regular_season_rank_by_position_group,dashboard,,Player Position Group Season Rankings,view bi.player_regular_season_rank_by_position_group,dashboard Player Position Group Season Rankings,58,2
+view,bi,player_season,dashboard,,Player Position Group Season Rankings,view bi.player_season,dashboard Player Position Group Season Rankings,59,2
+view,bi,player_season_primary_and_concat_position,dashboard,,Player Position Group Season Rankings,view bi.player_season_primary_and_concat_position,dashboard Player Position Group Season Rankings,60,2
+view,bi,player_season_primary_and_concat_team,dashboard,,Player Position Group Season Rankings,view bi.player_season_primary_and_concat_team,dashboard Player Position Group Season Rankings,61,2
+view,bi,season,dashboard,,Player Position Group Season Rankings,view bi.season,dashboard Player Position Group Season Rankings,64,2
+view,bi,game_season,dashboard,,Player Season Totals and Rankings,view bi.game_season,dashboard Player Season Totals and Rankings,48,3
+view,bi,player,dashboard,,Player Season Totals and Rankings,view bi.player,dashboard Player Season Totals and Rankings,49,3
+view,bi,player_game_stats,dashboard,,Player Season Totals and Rankings,view bi.player_game_stats,dashboard Player Season Totals and Rankings,51,3
+view,bi,player_regular_season_percentile,dashboard,,Player Season Totals and Rankings,view bi.player_regular_season_percentile,dashboard Player Season Totals and Rankings,56,3
+view,bi,player_regular_season_rank,dashboard,,Player Season Totals and Rankings,view bi.player_regular_season_rank,dashboard Player Season Totals and Rankings,57,3
+view,bi,player_season,dashboard,,Player Season Totals and Rankings,view bi.player_season,dashboard Player Season Totals and Rankings,59,3
+view,bi,player_season_primary_and_concat_position,dashboard,,Player Season Totals and Rankings,view bi.player_season_primary_and_concat_position,dashboard Player Season Totals and Rankings,60,3
+view,bi,player_season_primary_and_concat_team,dashboard,,Player Season Totals and Rankings,view bi.player_season_primary_and_concat_team,dashboard Player Season Totals and Rankings,61,3
+view,bi,season,dashboard,,Player Season Totals and Rankings,view bi.season,dashboard Player Season Totals and Rankings,64,3
