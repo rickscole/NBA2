@@ -9,6 +9,7 @@ create_bi_schema.sql -- create bi schema
 -- create standalone views
 create_view_position_group.sql -- create bi view of position groups
 create_view_season_type.sql -- create bi view of season types
+create_view_season.sql -- create view of seasons
 
 
 -- create stage tables
@@ -75,3 +76,5 @@ create_view_player_position_group_regular_season_rank.sql -- create bi view of p
 create_view_player_regular_season_rank_by_position_group.sql -- create bi view of player position group
 create_view_player_position_group_regular_season_percentile.sql -- create bi view of player position group regular season percentile
 create_view_regular_season_pat_rankings_superstars_and_stars.sql -- create bi view of PAT Rankings by season for players that meet at least star minutes criteria
+create_view_player_regular_season_pat_stats.sql -- create bi view of regular season PAT stats
+create_view_team.sql -- create bi view of teams
