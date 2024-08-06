@@ -44,6 +44,7 @@ create_sp_create_team_score.sql -- create sp to create a team score
 create_sp_create_regular_season_min_max_player_stats.sql -- create sp to create min and max of season player stats
 create_sp_create_player_position_group_regular_season_rank.sql -- create sp to create rankings for players by position group for each season
 create_sp_create_regular_season_minutes_buckets.sql -- create sp to create minutes buckets (superstar, star, starter, rotation, all) for players in a given season
+create_sp_create_team_regular_season.sql -- create sp to get aggregated regular season stats for teams
 
 
 -- create 3rd order stored procedures
