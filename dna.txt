@@ -37,21 +37,25 @@ create_sp_create_player_season_primary_and_concat_team.sql -- create sp to creat
 create_sp_create_player_full_season_rank.sql -- create sp to create player season ranks table
 create_sp_create_player_regular_season_rank.sql -- create sp to create player regular season ranks table
 create_sp_create_team.sql -- create sp to create team table
+create_sp_create_team_score.sql -- create sp to create a team score
 
 
 -- create 2nd order stored procedures
 create_sp_create_regular_season_min_max_player_stats.sql -- create sp to create min and max of season player stats
 create_sp_create_player_position_group_regular_season_rank.sql -- create sp to create rankings for players by position group for each season
+create_sp_create_regular_season_minutes_buckets.sql -- create sp to create minutes buckets (superstar, star, starter, rotation, all) for players in a given season
 
 
 -- create 3rd order stored procedures
 create_sp_create_player_regular_season_percentile.sql -- create sp to create player regular season percentile
 create_sp_create_player_regular_season_rank_by_position_group.sql -- create sp to create rankings by position for various metrics in a season
 create_sp_create_regular_season_min_max_player_position_group_stats.sql -- create sp to create min and max of season payer stats by position group
+create_sp_create_player_regular_season_pat_stats.sql -- create sp to create PAT stats for players in regular season
 
 
 -- create 4th order stored procedures
 create_sp_create_player_position_group_regular_season_percentile.sql -- create sp to create player regular season percentile by position group
+create_sp_create_regular_season_pat_rankings_superstars_and_stars.sql -- create sp to create player regular season rankings for PAT, for players with star minutes (or greater)
 
 
 -- create views
@@ -69,3 +73,4 @@ create_view_player_regular_season_percentile.sql -- create bi view of player reg
 create_view_player_position_group_regular_season_rank.sql -- create bi view of player position group regular season rank
 create_view_player_regular_season_rank_by_position_group.sql -- create bi view of player position group
 create_view_player_position_group_regular_season_percentile.sql -- create bi view of player position group regular season percentile
+create_view_regular_season_pat_rankings_superstars_and_stars.sql -- create bi view of PAT Rankings by season for players that meet at least star minutes criteria
