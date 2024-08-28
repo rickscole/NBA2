@@ -53,6 +53,7 @@ create_sp_create_player_regular_season_percentile.sql -- create sp to create pla
 create_sp_create_player_regular_season_rank_by_position_group.sql -- create sp to create rankings by position for various metrics in a season
 create_sp_create_regular_season_min_max_player_position_group_stats.sql -- create sp to create min and max of season payer stats by position group
 create_sp_create_player_regular_season_pat_stats.sql -- create sp to create PAT stats for players in regular season
+create_player_regular_season_pat_percentile.sql -- create sp to create player percentiles for PAT stats in a season
 
 
 -- create 4th order stored procedures
@@ -79,3 +80,4 @@ create_view_regular_season_pat_rankings_superstars_and_stars.sql -- create bi vi
 create_view_player_regular_season_pat_stats.sql -- create bi view of regular season PAT stats
 create_view_team.sql -- create bi view of teams
 create_view_player_game_stats_pat.sql -- create bi view of player game stats with only PAT data
+create_view_player_regular_season_volume_efficiency.sql -- create bi view of volume and efficiency in one
