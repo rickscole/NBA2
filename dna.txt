@@ -33,9 +33,9 @@ create_sp_clean_player_game_stats.sql -- create clean sp for player game stats
 
 
 -- populate and clean base tables
-GetTodaysNBAScores2.py
-GetNBAPlayerStats2.py
-CleanNBADataStructures.py
+GetTodaysNBAScores2.py -- get daily NBA scores from API
+GetNBAPlayerStats2.py -- get NBA Player stats from API
+CleanNBADataStructures.py -- clean the base data structures
 
 
 -- create 1st order stored procedures
