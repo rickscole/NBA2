@@ -32,6 +32,12 @@ create_sp_clean_scores.sql -- create clean sp for scores
 create_sp_clean_player_game_stats.sql -- create clean sp for player game stats
 
 
+-- populate and clean base tables
+GetTodaysNBAScores2.py
+GetNBAPlayerStats2.py
+CleanNBADataStructures.py
+
+
 -- create 1st order stored procedures
 create_sp_create_player_season_primary_and_concat_position.sql -- create sp to create player season position table
 create_sp_create_player_season_primary_and_concat_team.sql -- create sp to create player season team table
