@@ -22,6 +22,10 @@ create_table_scores.sql -- create scores table
 create_table_player_game_stats.sql -- create player game stats table 
 
 
+-- create purging stored procedures
+create_sp_delete_player_game_stats.sql -- create delete sp for player game stats
+
+
 -- create transfer stored procedures
 create_sp_transfer_scores.sql -- create transfer sp for scores 
 create_sp_transfer_player_game_stats.sql -- create transfer sp for player game stats
