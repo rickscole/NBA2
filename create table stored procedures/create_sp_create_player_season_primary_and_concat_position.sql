@@ -3,7 +3,7 @@ GO
 SET QUOTED_IDENTIFIER ON
 GO
 
-CREATE procedure [dbo].[create_player_season_primary_and_concat_position] as
+create procedure [dbo].[create_player_season_primary_and_concat_position] as
 
 
 -- drop table if exists
@@ -23,7 +23,7 @@ with t00 as
     , number_of_games = count(*)
     from [clean].[player_game_stats] pgs
     where 1 = 1 
-    and pgs.position is not null
+    and pgs.position is not null and pgs.[position] != 'None'
     group by 
     pgs.player_id 
     , pgs.player_name
