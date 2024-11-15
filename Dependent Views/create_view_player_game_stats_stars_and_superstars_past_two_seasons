@@ -1,0 +1,20 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+create view [dbo].[player_game_stats_stars_and_superstars_past_two_seasons] as
+select 
+pgs.player_id
+, pgs.game_id 
+, pgs.points 
+, pgs.game_date
+from clean.player_game_stats pgs 
+inner join(
+select distinct player_id from [dbo].[player_regular_season_minutes_bucket] where season in (2024, 2023) and player_minutes_category in ('Superstar', 'Star')
+) b on pgs.player_id = b.player_id
+left join clean.scores sc on pgs.game_id = sc.external_id
+where 1 = 1 
+and sc.game_type in ('Regular', 'Playoffs')
+and pgs.season in (2024, 2023)
+and coalesce(pgs.minutes, 0) != 0 
+GO
