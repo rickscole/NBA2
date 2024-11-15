@@ -15,6 +15,7 @@ create_view_season.sql -- create view of seasons
 -- create stage tables
 create_table_stg_scores.sql -- create stg scores table
 create_table_stg_player_game_stats.sql -- create stg player game stats table 
+create_table_stg_player_game_predictions_stars_and_superstars_past_two_seasons.sql -- create stg player game predictions stars and superstars past two seasons table
 
 
 -- create base tables
@@ -29,6 +30,7 @@ create_sp_delete_player_game_stats.sql -- create delete sp for player game stats
 -- create transfer stored procedures
 create_sp_transfer_scores.sql -- create transfer sp for scores 
 create_sp_transfer_player_game_stats.sql -- create transfer sp for player game stats
+create_sp_transfer_player_game_predictions_stars_and_superstars_past_two_seasons.sql -- create transfer sp for player game predictions stars and superstars past two seasons
 
 
 -- create cleaning stored procedures
@@ -93,3 +95,8 @@ create_view_team.sql -- create bi view of teams
 create_view_player_game_stats_pat.sql -- create bi view of player game stats with only PAT data
 create_view_player_regular_season_volume_efficiency.sql -- create bi view of volume and efficiency in one
 create_view_player_regular_season_correlation.sql -- create bi view of player-season correlations
+create_view_player_game_stats_stars_and_superstars_past_two_seasons.sql -- create view for consumption in player games prediction process
+
+
+-- dependent Python scripts
+CreatePlayerGamePredictionsStarsAndSuperstarsPastTwoSeasons.py
