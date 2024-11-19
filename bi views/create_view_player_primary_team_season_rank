@@ -1,0 +1,7 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+create view [bi].[player_primary_team_season_rank] as 
+select * from dbo.player_primary_team_season_rank
+GO
