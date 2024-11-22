@@ -1,0 +1,8 @@
+SET ANSI_NULLS ON
+GO
+SET QUOTED_IDENTIFIER ON
+GO
+CREATE view [bi].[player_primary_team_season_percentile] as 
+select * 
+from dbo.player_primary_team_season_percentile
+GO
