@@ -16,6 +16,7 @@ update dbo.scores set game_date = '2025-03-10' where external_id = 15037
 update dbo.scores set game_date = '2025-03-21' where external_id = 15124
 update dbo.scores set game_date = '2025-03-12' where external_id = 15056
 update dbo.scores set game_date = '2025-03-09' where external_id = 15026
+update dbo.scores set game_date = '2024-10-29' where external_id = 14157
 exec cln.clean_scores
 exec create_team_score
 */
