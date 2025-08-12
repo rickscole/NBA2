@@ -95,7 +95,7 @@ full_context = context + "\nHere is the NBA data:\n" + data_context
 #question = "Which player has the second highest median MANTRAP?"
 #question = "Which player had the highest MANTRAP for the Detroit Pistons in 2020?"
 #question = "What was the highest MANTRAP recorded, and by what player?"
-question = "Does Luka Doncic have higher efficacy, or volume?"
+question = "Can you explain how you arrive at the MANTRAP calculation for Anthony Edwards?"
 
 
 
